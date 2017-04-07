@@ -37,7 +37,7 @@ export default class User extends Component {
                     </span>
                 </div>
                 <input type="text" onChange={e => this.state.url = e.target.value}/>
-                <button onClick={this.startPing} className={!(this.state.isPing) && 'btn-disable'}>ping</button>
+                <button onClick={this.startPing}>ping</button>
                 <div>serverStatus : {this.state.serverStatus}</div>
                 <div>serverResponceTime: {this.state.serverResponceTime}</div>
             </section>
